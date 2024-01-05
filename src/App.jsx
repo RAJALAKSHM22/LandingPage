@@ -7,6 +7,15 @@ import Review from './component/review'
 import Footer from './component/footer' 
 import Info from './component/info' 
 
+// import Pic1 from '../src/assets/pic1.jpeg'
+// import Pic2 from '../src/assets/pic2.jpg'
+// import Pic3 from '../src/assets/pic3.jpg'
+import Bg1 from '../src/assets/bg1.avif'
+import Bg2 from '../src/assets/bg2.avif'
+// import Bg3 from '../src/assets/bg3.jpeg'
+
+
+
 function App() {
   
 let marks=[
@@ -26,17 +35,23 @@ let marks=[
 
 let detail =[
   {
-    pic:"assets/img/bg-showcase-1.jpg",
+    cls1:"col-lg-6 order-lg-2 text-white showcase-img" ,
+    cls2:"col-lg-6 order-lg-1 my-auto showcase-text",
+    url:"src/assets/bg1.avif",
     title:"Fully Responsive Design",
     describe:"When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!"
   },
   {
-    pic:"assets/img/bg-showcase-2.jpg",
+    cls1:"col-lg-6 text-white showcase-img",
+    cls2:"col-lg-6 my-auto showcase-text",
+    url:"assets/img/bg-showcase-2.jpg",
     title:"Updated For Bootstrap 5",
     describe:"Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!"
   },
   {
-    pic:"assets/img/bg-showcase-3.jpg",
+    cls1:"col-lg-6 order-lg-2 text-white showcase-img",
+    cls2:"col-lg-6 order-lg-1 my-auto showcase-text",
+    url:"assets/img/bg-showcase-3.jpg",
     title:"Easy to Use & Customize",
     describe:"Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!"
   }
@@ -44,7 +59,7 @@ let detail =[
 
 let person =[
   {
-    img:"assets/img/testimonials-1.jpg ",
+    img:"Pic1",
     name:"Margaret E.",
     comment:"This is fantastic! Thanks so much guys!"
   },
@@ -63,6 +78,8 @@ let person =[
 return <>
 <Nav/>
 <Header/>
+{/* <img src={Pic3}></img>
+<img src={Bg1}></img> */}
 
 <section className="features-icons bg-light text-center">
   <div className="container">
